@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    <link href="https://suns.tvattstugan.se/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+    <title>
+        {{store_name}}
+        {{#list_page}}{{#navigation}}{{#is_current}}- {{label}}{{/is_current}}{{/navigation}}{{/list_page}}
+        {{#product_page}}{{#product}}- {{title}}{{/product}}{{/product_page}}
+        {{#about_page}}- {{#lang}}About{{/lang}}{{/about_page}}
+    </title>
+
+  </head>
+ 
+  <body class="tictail {{#list_page}}{{#on_index}}home{{/on_index}}{{/list_page}} {{#list_page}}{{#navigation}}{{#is_current}}{{label}}{{/is_current}}{{/navigation}}{{/list_page}} {{#list_page}}{{#on_index}}index{{/on_index}}{{/list_page}}">
+    
+	<!--The Header-->
+		<a href="{{store_url}}"><div class="logo spinnable"></div></a>
+			
+		<!--Fixed Menu-->
+			<ul class="top-menu">
+				<li><a href="{{store_url}}/products/shop" class="{{#list_page}}{{#navigation}}{{#is_current}}selected{{/is_current}}{{/navigation}}{{/list_page}}">{{#lang}}Shop{{/lang}}</a></li>
+				<li><a href="{{store_url}}/about" class="{{#about_page}}selected{{/about_page}}">{{#lang}}About{{/lang}}</a></li>
+			</ul>		
+		<!--END Fixed Menu-->	
+	
+		<!--Fun Menu-->	
+			<a class="fun-menu left {{#list_page}}{{#navigation}}{{#is_current}}selected{{/is_current}}{{/navigation}}{{/list_page}}" href="{{store_url}}/products/shop"></a>
+			<a class="fun-menu right {{#about_page}}selected{{/about_page}}" href="{{store_url}}/about"></a>
+		<!--ENDFun Menu-->		
+	
+	<!--END The Header-->
+
+		
+	<!-- List pages -->
+	{{#list_page}}
+	    <!-- Home Page -->
+	    {{#on_index}}
+            
+		<!--Home Feed-->
+			
+			<section class="inner-content home-feed intro z sky">
+				<div class="wrapper first">
+					<div class="home-feed-image first" style="background-image: url('https://suns.tvattstugan.se/photoshoot/6.jpg')"></div>	
+				</div>	
+			</section>	
+			<section class="inner-content feed home-feed z ground">	
+				<div class="wrapper">	
+					<div class="hidden-info"><h2 class="light"><a href="https://suns.dk/products/shop">Check our selection here</a></h2></div>
+					<div class="home-feed-image fill" style="background-image: url('https://suns.tvattstugan.se/photoshoot/2.jpg')"></div>
+					<img class="home-feed-image-mobile" src="https://suns.tvattstugan.se/photoshoot/2.jpg">
+					<div class="home-feed-image" style="background-image: url('https://suns.tvattstugan.se/photoshoot/3.jpg')"></div>
+					<img class="home-feed-image-mobile" src="https://suns.tvattstugan.se/photoshoot/3.jpg">
+					<div class="home-feed-image" style="background-image: url('https://suns.tvattstugan.se/photoshoot/4.jpg')"></div>
+					<img class="home-feed-image-mobile" src="https://suns.tvattstugan.se/photoshoot/4.jpg">
+					<div class="home-feed-image fill" style="background-image: url('https://suns.tvattstugan.se/photoshoot/5.jpg')"></div>
+					<img class="home-feed-image-mobile" src="https://suns.tvattstugan.se/photoshoot/5.jpg">
+					<div class="home-feed-image" style="background-image: url('https://suns.tvattstugan.se/photoshoot/7.jpg')"></div>
+					<img class="home-feed-image-mobile" src="https://suns.tvattstugan.se/photoshoot/7.jpg">
+				</div>			
+			    <span class="clear"></span>
+				<section class="footer home">
+					<div class="inner-padding">
+						<h2 class="light">Suns ApS<br>
+						CVR: 38574566</h2>
+					</div>	
+				</section>				
+			</section>	             
+
+      {{/on_index}}
+      {{^on_index}}
+      <!-- END Home Page -->
+ 
+      <!-- Products -->
+      {{#current_navigation}}
+	    <!-- List pages -->
+
+		    <section class="inner-content page_start">
+				<h1 class="page-title">Select your model</h1>        
+	      
+	      {{#products}}
+					<section class="inner-content shop-featured {{identifier}}" model-id="{{identifier}}">
+						
+		
+						<!--Model name-->
+						<div class="grid-size three model-wrapper-grid">
+						    <div class="grid-size two model-wrapper">
+							<a class="model-name bold" href="{{absolute_url}}">{{title}}</a>
+							</div>
+						</div>	
+						
+						<!--Gallery-->
+						<div class="grid-size six">
+						       
+							<div class="featured-wrapper">	
+							    <a href="{{absolute_url}}">  
+								<?xml version="1.0" encoding="utf-8"?>
+								<svg version="1.1" id="frame_round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 400" style="enable-background:new 0 0 800 400;" xml:space="preserve">
+									<path class="svg_glass" d="M227.6,307.2c-64.7,0-102.3-28.3-112.9-83.9c-13.3-69.9-0.4-125.1,110.8-123.1c102.9,1.8,123,38.8,116.8,107.8
+										C337.4,262.8,292.3,307.2,227.6,307.2"/>
+									<path class="svg_glass" d="M572.4,307.2c64.7,0,102.3-28.3,112.9-83.9c13.3-69.9,0.4-125.1-110.8-123.1c-102.9,1.8-123,38.8-116.8,107.8
+										C462.6,262.8,507.7,307.2,572.4,307.2"/>
+									<path class="svg_frame" d="M57.5,127.2c-6.9,0.1-6.8,8.5-6.7,12.1c0.2,15.4,4.7,14.3,18.7,14.5c20.8,0.3,21.6,34.1,25.6,52.7
+										c15.6,73.1,50,114.4,131.8,114.4c70.5,0,112.3-28.9,142.2-138.8c2.3-8.3-9.9-16.3-5.7-23.5c5-8.7,22.5-11.2,32.3-11.2
+										c1.7,0,6.7,0,8.4,0c9.9,0,27.3,2.5,32.3,11.2c4.2,7.2-7.9,15.2-5.7,23.5c29.9,109.9,71.8,138.8,142.2,138.8
+										c81.8,0,116.2-41.3,131.8-114.4c4-18.7,4.8-52.4,25.6-52.7c14-0.2,18.5,0.8,18.7-14.5c0-3.6,0.2-12-6.7-12.1
+										c-52.9-0.9-61.1-27.9-123.1-36.9c-59.1-8.5-112.9,0.7-150.2,20.5c-16.7,8.9-48,7.4-65.9,7c-1.1,0-5.5,0-6.6,0
+										c-18,0.4-49.2,1.9-65.9-7c-37.3-19.8-91.1-29-150.2-20.5C118.6,99.2,110.4,126.2,57.5,127.2"/>
+								</svg>	
+								<svg version="1.1" id="frame_square" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 400" style="enable-background:new 0 0 800 400;" xml:space="preserve">
+										<path class="svg_glass" d="M208.2,302.9c85.3-4.3,105-15.9,127.2-79.7c23-66,10-79.2-11.3-97c-28-23.3-204-36.3-243.5,0.2
+											c-14.8,13.7-16.2,77.1-1.8,117.5C92.7,283.3,123,307.2,208.2,302.9"/>
+										<path class="svg_frame" d="M23.8,100.8c-4.7,2.1-6.4,35.9-2.4,42.6c4,6.7,9.6,8.1,12.3,11.8c4.9,6.6,7.9,21.2,11.7,40.3
+											c10.1,51.3,25.8,104.1,79.7,114.3c81,15.3,124,9,157.7-1.8c29.5-9.5,50.6-16.8,79-97.5c9.4-26.7,13.4-43.3,38.3-44.6
+											c24.9,1.2,28.9,17.8,38.3,44.6c28.3,80.7,49.5,88,79,97.5c33.7,10.8,76.7,17.2,157.7,1.8c53.8-10.2,69.6-63,79.7-114.3
+											c3.7-19.1,6.7-33.8,11.7-40.3c2.8-3.7,8.3-5.2,12.3-11.8c4-6.7,2.3-40.5-2.4-42.6c-2.8-1.2-6.9-7.6-126.3-12.2
+											c-119.3-4.7-152,1-180.3,14.3c-24,11.3-30,13-40.3,13.3c-6.5,0.2-20.1,0.3-29.3,0.3c-9.1,0-22.7-0.1-29.3-0.3
+											c-10.3-0.3-16.3-2-40.3-13.3c-28.3-13.4-61-19-180.3-14.3C30.7,93.2,26.6,99.6,23.8,100.8"/>
+										<path class="svg_glass" d="M591.8,302.9c-85.3-4.3-105-15.9-127.2-79.7c-23-66-10-79.2,11.3-97c28-23.3,204-36.3,243.5,0.2
+											c14.8,13.7,16.2,77.1,1.8,117.5C707.3,283.3,677,307.2,591.8,302.9"/>
+									</svg>	
+									 </a>
+							    <div class="fotorama-shop" data-auto="false">
+							    {{#all_images}}
+							        <img src="{{url-2000}}">
+							    {{/all_images}}
+						    	</div>
+						    </div>
+						   
+						</div>			
+						
+						<!--Single Controls-->
+						<div class="grid-size three">
+							<div class="single-controls">
+		            {{#in_stock}}
+		            	{{#add_to_cart}}
+							    
+								    <div class="inner">									
+									  	<span class="clear"></span>
+											<p>Select color:</p>
+			                 <div class="Product__variations shop">{{variations_radio}}</div>
+									    <span class="clear"></span>	
+											<p class="price-tag">{{price_tag}}</p>	
+									    <span class="clear"></span>	
+								    </div>
+							 
+										<!-- Learn more --> 
+										<a class="button-big learn-more" href="{{absolute_url}}">Learn more</a>            
+		                    
+                  	<!-- Add to cart --> 
+                  	{{#add_to_cart_button}}
+                      {{#lang}}Add to cart{{/lang}}
+                    {{/add_to_cart_button}}
+                 
+                  {{/add_to_cart}}
+								
+								{{/in_stock}}
+						  </div>	
+              {{#out_of_stock}}
+              	<div class="inner">	
+                  <p class='Product__price Product__price--out-of-stock'>{{#lang}}Out of stock{{/lang}}</p>
+									 <span class="clear"></span>	                
+              	</div> 
+								<!-- Learn more --> 
+								<a class="button-big learn-more" href="{{absolute_url}}">Learn more</a>                 	
+              {{/out_of_stock}}				
+									
+						</div>		
+						<!--END Single Controls-->
+						
+						<span class="clear"></span>	
+					</section>	
+	            
+                
+        {{/products}}
+            
+				<span class="clear"></span>
+				<section class="footer home">
+					<div class="inner-padding">
+						<h2 class="light">Suns ApS<br>
+						CVR: 38574566</h2>
+					</div>	
+				</section>	
+			</section>	
+      {{/current_navigation}}
+      <!-- END Products -->
+        
+            
+      {{/on_index}}
+    
+    {{/list_page}}
+    
+    <!-- END List pages -->
+    
+    {{#about_page}}
+	<section class="inner-content page_start">
+	    <div class="inner-padding about-page">{{store_description}}</div>
+			<section class="footer about">
+				<div class="inner-padding">
+					<h2 class="light">Suns ApS<br>
+					CVR: 38574566</h2>
+				</div>	
+			</section>	            
+    </section>
+        
+    {{/about_page}}
+
+
+
+    {{#product_page}}
+
+
+
+      {{#product}}
+			<!--Single Product-->
+			<section class="inner-content home-feed intro z sky single-fotorama">
+				<!--Gallery-->
+				<div class="featured-wrapper">
+					<div class="fotorama" data-auto="false">
+					    {{#all_images}}
+					        <img src="{{url-2000}}">
+					    {{/all_images}}
+					</div>					
+				</div>				
+			</section>
+			
+				<!--Single Controls-->
+				<div class="single-controls single">
+					<div class="inner">
+					{{#in_stock}}
+						<p>Model:</p>
+						<a class="button plain selected">{{title}}</a>
+						{{#related_products}}
+							<a class="button plain" href="{{absolute_url}}">{{title}}</a>
+						{{/related_products}}
+	    
+					    {{#add_to_cart}}
+								<span class="clear"></span>
+								<p>Select color:</p>
+		                        <div class="Product__variations single">{{variations_radio}}</div>
+								<span class="clear"></span>	
+								<p>Specification:</p>			
+								<p class="small">{{description}}</p>	
+								<span class="clear"></span>	
+								<p>{{price_tag}}</p>	
+								<span class="clear"></span>	
+							</div>    
+		                    {{#add_to_cart_button}}
+		           	            {{#lang}}Add to cart{{/lang}}
+		                    {{/add_to_cart_button}}
+	                    {{/add_to_cart}}
+                    {{/in_stock}}
+                    
+                    {{#out_of_stock}}
+                    <p class='Product__price Product__price--out-of-stock'>{{#lang}}Out of stock{{/lang}}</p>
+                    {{/out_of_stock}}
+                    </div>
+				</div>					
+				<!--END Single Controls-->
+				
+
+			<!--END Gallery->
+				
+			<!--Single Feed-->
+			<section class="inner-content feed home-feed z ground shop-rest">	
+				<div class="wrapper all-images">	
+					
+					
+					{{#all_images}}
+					    <div class="home-feed-image" style="background-image: url('{{url-2000}}')"></div>
+					    <img class="home-feed-image-mobile" src="{{url-2000}}">
+					{{/all_images}}				
+				</div>			
+
+			
+			<!--
+			<section class="inner-content">
+				<div class="inner-padding">
+					<div class="grid-size nine all-images">
+					    {{#all_images}}
+					        <img src="{{url-2000}}">
+					    {{/all_images}}
+					</div>
+				</div>
+			</section>
+			-->
+			<span class="clear"></span>				
+			<!--END Single Feed->
+				
+			<!--END Single Product-->
+      {{/product}}
+         <!--
+		  <section class="footer">
+				<div class="inner-padding">
+					<h2 class="light">Suns ApS<br>
+					Struenseegade 46, 3. th. 2200 København N<br>
+					CVR: 38574566</h2>
+				</div>	
+			</section>	     
+			-->
+			<span class="clear"></span>
+				<section class="footer home">
+					<div class="inner-padding">
+						<h2 class="light">Suns ApS<br>
+						Struenseegade 46, 3. th. 2200 København N<br>
+						CVR: 38574566</h2>
+					</div>	
+				</section>				
+			</section>
+		</section>	
+    {{/product_page}}
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script type="text/javascript" src="https://suns.tvattstugan.se/js/DrawSVGPlugin.min.js"></script>
+    <script type="text/javascript" src="https://suns.tvattstugan.se/js/script.js"></script>
+
+
+
+  </body>
+</html>
+
+

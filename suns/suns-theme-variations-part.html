@@ -1,0 +1,40 @@
+						<!--Single Controls-->
+						<div class="grid-size three">
+							<div class="single-controls">
+			                {{#in_stock}}
+			            	    {{#add_to_cart}}
+								    
+								    <div class="inner">									
+										 <span class="clear"></span>
+										<!--
+										<p>Select color:</p>
+				                        <div class="Product__variations shop">{{variations_radio}}</div>
+				                        <span class="clear"></span>	
+				                        -->
+										    
+										<p class="price-tag">{{price_tag}}</p>	
+										<span class="clear"></span>	
+									</div>
+								 
+								    <!-- Learn more --> 
+									<a class="button-big learn-more" href="{{absolute_url}}">Learn more</a>            
+			                    
+	                  	            <!-- Add to cart --> 
+	                  	            {{#add_to_cart_button}}
+	                                    {{#lang}}Add to cart{{/lang}}
+	                                {{/add_to_cart_button}}
+	                 
+	                            {{/add_to_cart}}
+							{{/in_stock}}
+								
+	                        {{#out_of_stock}}
+	              	            <div class="inner">	
+	                                <p class='Product__price Product__price--out-of-stock'>{{#lang}}Out of stock{{/lang}}</p>
+								    <span class="clear"></span>	                
+	              	            </div> 
+								<!-- Learn more --> 
+								<a class="button-big learn-more" href="{{absolute_url}}">Learn more</a>                 	
+	                        {{/out_of_stock}}	
+	                        </div>
+						</div>
+						<!--END Single Controls-->
